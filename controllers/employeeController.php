@@ -1,6 +1,6 @@
 <?php 
 
-require MODELS . 'employeeModel.php';
+require_once MODELS . 'employeeModel.php';
 
 $action = '';
 
@@ -16,6 +16,17 @@ if(isset($_REQUEST['action'])) {
 
 
 function getAllEmployees() {
-  $employees = get();
+  $employees = read();
   require VIEWS . 'employee/employeeDashboard.php';
+}
+
+function deleteEmpoyee($request) {
+  
+  $action = $request["action"];
+  $employee = null;
+  if (isset($request["id"])) {
+      $employee = delete($request["id"]);
+      header("Location: index.php?controller=employee&action=getAllEmployees");
+  }
+  echo 'hola';
 }

@@ -1,6 +1,6 @@
 <?php 
 
-define('HOST', 'localhost:8080');
+define('HOST', '127.0.0.1');
 define('DB', 'mvc_basics');
 define('USER', 'root');
 define('PASSWORD', '');

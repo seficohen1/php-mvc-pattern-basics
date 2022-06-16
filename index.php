@@ -1,7 +1,7 @@
 <?php 
 
-include_once "config/constants.php";
-include_once "config/db.php";
+include_once "config/constant.php";
+
 
 if(isset($_GET['controller'])) {
   $controller = CONTROLLERS . $_GET['controller'] . "Controller.php";

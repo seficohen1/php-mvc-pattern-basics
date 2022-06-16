@@ -11,7 +11,7 @@
 <body>
     <h1>Welcome to MVC Pattern Basics!</h1>
     <div class="list-group">
-        <a class="list-group-item list-group-item-action" href="?controller=books&action=getAllBooks">Books Controller</a>
+        <a class="list-group-item list-group-item-action" href="?controller=book&action=getAllBooks">Books Controller</a>
 </body>
 
 </html>

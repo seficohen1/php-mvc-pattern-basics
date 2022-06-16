@@ -1,7 +1,7 @@
 <?php 
 
-define('HOST', '192.168.64.2');
+define('HOST', 'localhost:8080');
 define('DB', 'mvc_basics');
 define('USER', 'root');
-define('PASSWORD', 'kim1kim2');
+define('PASSWORD', '');
 define('CHARSET', 'utf8mb4');
